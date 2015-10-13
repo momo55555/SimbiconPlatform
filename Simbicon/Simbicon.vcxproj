@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B9A189E4-3438-469A-B828-57FD35CA7AAF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Simbicon</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Dependencies\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Intermediates\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\Dependencies\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Intermediates\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_r</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\PhysX\PxTask\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation\internal\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation;$(SolutionDir)Dependencies\include\PhysX\PhysXVisualDebuggerSDK\PVDCommLayer\public;$(SolutionDir)Dependencies\include\PhysX\PhysXProfileSDK\sdk\include;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\extensions;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\Common;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI;$(SolutionDir)Dependencies\include\PhysX;$(SolutionDir)gsl;$(SolutionDir);$(SolutionDir)MathLib_LOCO;$(SolutionDir)Physics;$(SolutionDir)Dependencies\include;$(SolutionDir)Utils;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\PhysX\PxTask\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation\internal\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation;$(SolutionDir)Dependencies\include\PhysX\PhysXVisualDebuggerSDK\PVDCommLayer\public;$(SolutionDir)Dependencies\include\PhysX\PhysXProfileSDK\sdk\include;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\extensions;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\Common;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI;$(SolutionDir)Dependencies\include\PhysX;$(SolutionDir)gsl;$(SolutionDir);$(SolutionDir)MathLib_LOCO;$(SolutionDir)Physics;$(SolutionDir)Dependencies\include;$(SolutionDir)Utils;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BalanceFeedback.h" />
+    <ClInclude Include="BaseControlFramework.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="ConUtils.h" />
+    <ClInclude Include="PoseController.h" />
+    <ClInclude Include="SimBiConFramework.h" />
+    <ClInclude Include="SimBiConState.h" />
+    <ClInclude Include="SimBiController.h" />
+    <ClInclude Include="SimGlobals.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Trajectory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BalanceFeedback.cpp" />
+    <ClCompile Include="BaseControlFramework.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="ConUtils.cpp" />
+    <ClCompile Include="PoseController.cpp" />
+    <ClCompile Include="SimBiConFramework.cpp" />
+    <ClCompile Include="SimBiConState.cpp" />
+    <ClCompile Include="SimBiController.cpp" />
+    <ClCompile Include="SimGlobals.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

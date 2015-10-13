@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2405889F-E2EA-4045-984E-A17681229450}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Physics</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Dependencies\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Intermediates\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\Dependencies\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Intermediates\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_r</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\PhysX\PxTask\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation\internal\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation;$(SolutionDir)Dependencies\include\PhysX\PhysXVisualDebuggerSDK\PVDCommLayer\public;$(SolutionDir)Dependencies\include\PhysX\PhysXProfileSDK\sdk\include;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\extensions;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\Common;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI;$(SolutionDir);$(SolutionDir)MathLib_LOCO;$(SolutionDir)MathLib;$(SolutionDir)Dependencies\include;$(SolutionDir)Utils;$(SolutionDir)Dependencies\include\PhysX</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\PhysX\PxTask\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation\internal\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation;$(SolutionDir)Dependencies\include\PhysX\PhysXVisualDebuggerSDK\PVDCommLayer\public;$(SolutionDir)Dependencies\include\PhysX\PhysXProfileSDK\sdk\include;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\extensions;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\Common;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI;$(SolutionDir);$(SolutionDir)MathLib_LOCO;$(SolutionDir)MathLib;$(SolutionDir)Dependencies\include;$(SolutionDir)Utils;$(SolutionDir)Dependencies\include\PhysX</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArticulatedFigure.h" />
+    <ClInclude Include="ArticulatedRigidBody.h" />
+    <ClInclude Include="BallInSocketJoint.h" />
+    <ClInclude Include="BoxCDP.h" />
+    <ClInclude Include="CapsuleCDP.h" />
+    <ClInclude Include="CollisionDetectionPrimitive.h" />
+    <ClInclude Include="collisionLibrary.h" />
+    <ClInclude Include="ConstantForce.h" />
+    <ClInclude Include="ContactPoint.h" />
+    <ClInclude Include="Force.h" />
+    <ClInclude Include="HingeJoint.h" />
+    <ClInclude Include="Joint.h" />
+    <ClInclude Include="NullWorld.h" />
+    <ClInclude Include="PhysicsGlobals.h" />
+    <ClInclude Include="PhysX3World.h" />
+    <ClInclude Include="PlaneCDP.h" />
+    <ClInclude Include="PreCollisionQuery.h" />
+    <ClInclude Include="PxArticulatedFigure.h" />
+    <ClInclude Include="PxBodyNode.h" />
+    <ClInclude Include="PxPlane.h" />
+    <ClInclude Include="PxRigidBody.h" />
+    <ClInclude Include="PxSetupEnv.h" />
+    <ClInclude Include="RBForceAccumulator.h" />
+    <ClInclude Include="RBProperties.h" />
+    <ClInclude Include="RBState.h" />
+    <ClInclude Include="RBUtils.h" />
+    <ClInclude Include="RigidBody.h" />
+    <ClInclude Include="SphereCDP.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StiffJoint.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TimedConstantForce.h" />
+    <ClInclude Include="UniversalJoint.h" />
+    <ClInclude Include="World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArticulatedFigure.cpp" />
+    <ClCompile Include="ArticulatedRigidBody.cpp" />
+    <ClCompile Include="BallInSocketJoint.cpp" />
+    <ClCompile Include="BoxCDP.cpp" />
+    <ClCompile Include="CapsuleCDP.cpp" />
+    <ClCompile Include="CollisionDetectionPrimitive.cpp" />
+    <ClCompile Include="HingeJoint.cpp" />
+    <ClCompile Include="Joint.cpp" />
+    <ClCompile Include="PhysicsGlobals.cpp" />
+    <ClCompile Include="PhysX3World.cpp" />
+    <ClCompile Include="PlaneCDP.cpp" />
+    <ClCompile Include="PreCollisionQuery.cpp" />
+    <ClCompile Include="PxArticulatedFigure.cpp" />
+    <ClCompile Include="PxBodyNode.cpp" />
+    <ClCompile Include="PxPlane.cpp" />
+    <ClCompile Include="PxRigidBody.cpp" />
+    <ClCompile Include="PxSetupEnv.cpp" />
+    <ClCompile Include="RBForceAccumulator.cpp" />
+    <ClCompile Include="RBProperties.cpp" />
+    <ClCompile Include="RBStatecpp.cpp" />
+    <ClCompile Include="RBUtils.cpp" />
+    <ClCompile Include="RigidBody.cpp" />
+    <ClCompile Include="SphereCDP.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StiffJoint.cpp" />
+    <ClCompile Include="UniversalJoint.cpp" />
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

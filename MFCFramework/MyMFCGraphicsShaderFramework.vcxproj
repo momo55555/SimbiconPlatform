@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6EE7749-BB24-4F78-8400-992DF9C0EB17}</ProjectGuid>
+    <RootNamespace>MyMFCGraphicsShaderFramework</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>MyGameEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)\Intermediates\$(ProjectName)\$(Configureation)</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <OutDir>$(SolutionDir)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)\Intermediates\$(ProjectName)\$(Configureation)</IntDir>
+    <TargetName>$(ProjectName)_r</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\PhysX\PxTask\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation\internal\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation;$(SolutionDir)Dependencies\include\PhysX\PhysXVisualDebuggerSDK\PVDCommLayer\public;$(SolutionDir)Dependencies\include\PhysX\PhysXProfileSDK\sdk\include;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\extensions;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\Common;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI;$(SolutionDir);$(SolutionDir)Simbicon;$(SolutionDir)MathLib_LOCO;$(SolutionDir)MathLib;$(SolutionDir)Dependencies\include\PhysX;$(SolutionDir)Utils;$(SolutionDir)Dependencies\include\ImageMagick-6;$(SolutionDir)OpenGLRender;$(SolutionDir)Physics;$(SolutionDir)Dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;libcmtd.lib;</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Dependencies\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>shark_debug.lib;Foundation.lib;PhysX3Common.lib;PhysX3Cooking_x86.lib;PhysX3_x86.lib;PhysX3Extensions.lib;PxTask.lib;PvdRuntime.lib;Simbicon_d.lib;gsl_d.lib;MathLib_LOCO_d.lib;MathLib_d.lib;Utils_d.lib;Physics_d.lib;assimpd.lib;CORE_DB_Magick++_.lib;OpenGLRender_d.lib;glew32.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\PhysX\PxTask\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation\internal\include;$(SolutionDir)Dependencies\include\PhysX\PxFoundation;$(SolutionDir)Dependencies\include\PhysX\PhysXVisualDebuggerSDK\PVDCommLayer\public;$(SolutionDir)Dependencies\include\PhysX\PhysXProfileSDK\sdk\include;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\extensions;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI\Common;$(SolutionDir)Dependencies\include\PhysX\PhysXAPI;$(SolutionDir);$(SolutionDir)Simbicon;$(SolutionDir)MathLib_LOCO;$(SolutionDir)MathLib;$(SolutionDir)Dependencies\include\PhysX;$(SolutionDir)Utils;$(SolutionDir)Dependencies\include\ImageMagick-6;$(SolutionDir)OpenGLRender;$(SolutionDir)Physics;$(SolutionDir)Dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Dependencies\lib\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>shark.lib;Foundation.lib;PhysX3Common.lib;PhysX3Cooking_x86.lib;PhysX3_x86.lib;PhysX3Extensions.lib;PxTask.lib;PvdRuntime.lib;Simbicon_r.lib;gsl_r.lib;MathLib_LOCO_r.lib;MathLib_r.lib;Utils_r.lib;Physics_r.lib;assimpd.lib;CORE_RL_Magick++_.lib;OpenGLRender_r.lib;glew32.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;libcmtd.lib;</IgnoreSpecificDefaultLibraries>
+      <Profile>true</Profile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="ControllerFramwork.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="BVHPlayer.h" />
+    <ClInclude Include="FloorTechnique.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="LightingTechnique.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MyMFCGraphicsShaderFramework.h" />
+    <ClInclude Include="MyMFCGraphicsShaderFrameworkDoc.h" />
+    <ClInclude Include="MyMFCGraphicsShaderFrameworkView.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="PhysXVisualization.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SkinningTechnique.h" />
+    <ClInclude Include="Skybox.h" />
+    <ClInclude Include="SkyboxTechnique.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="WireFrameTechnique.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="ControllerFramework.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="FloorTechnique.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="LightingTechnique.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MyMFCGraphicsShaderFramework.cpp" />
+    <ClCompile Include="MyMFCGraphicsShaderFrameworkDoc.cpp" />
+    <ClCompile Include="MyMFCGraphicsShaderFrameworkView.cpp" />
+    <ClCompile Include="Objectives1.h" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="PhysXVisualization.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="SkinningTechnique.cpp" />
+    <ClCompile Include="Skybox.cpp" />
+    <ClCompile Include="SkyboxTechnique.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="WireFrameTechinique.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyMFCGraphicsShaderFramework.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Data\GLEffects\Floor.fp" />
+    <None Include="..\Data\GLEffects\Floor.vp" />
+    <None Include="..\Data\GLEffects\Lighting.fp" />
+    <None Include="..\Data\GLEffects\Lighting.vp" />
+    <None Include="..\Data\GLEffects\Skinning.fp" />
+    <None Include="..\Data\GLEffects\Skinning.vp" />
+    <None Include="..\Data\GLEffects\Skybox.fp" />
+    <None Include="..\Data\GLEffects\Skybox.vp" />
+    <None Include="..\Data\GLEffects\WireFrame.fp" />
+    <None Include="..\Data\GLEffects\WireFrame.vp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MyMFCGraphicsShaderFramework.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

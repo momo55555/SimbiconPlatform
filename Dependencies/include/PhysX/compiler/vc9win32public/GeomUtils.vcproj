@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+ProjectType="Visual C++"
+Version="9.00"
+Name="GeomUtils"
+>
+<Platforms>
+<Platform Name="Win32"/>
+</Platforms>
+<Configurations>
+  <Configuration
+    Name="debug|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/GeomUtils/debug"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;&quot;./../../PhysXAPI/common&quot;;&quot;./../../PhysXAPI/geometry&quot;;&quot;./../../PhysXAPI/deprecated&quot;;&quot;./../../PhysXAPI&quot;;&quot;./../../PhysXCommon/src&quot;;&quot;./../../GeomUtils/headers&quot;;&quot;./../../GeomUtils/src&quot;;&quot;./../../GeomUtils/Opcode&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;_DEBUG;PX_CHECKED;PX_PHYSX_DLL_NAME_POSTFIX=DEBUG;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="0"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  /Zi "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="1"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/$(ProjectName)DEBUG.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="checked|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/GeomUtils/checked"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;&quot;./../../PhysXAPI/common&quot;;&quot;./../../PhysXAPI/geometry&quot;;&quot;./../../PhysXAPI/deprecated&quot;;&quot;./../../PhysXAPI&quot;;&quot;./../../PhysXCommon/src&quot;;&quot;./../../GeomUtils/headers&quot;;&quot;./../../GeomUtils/src&quot;;&quot;./../../GeomUtils/Opcode&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;NDEBUG;PX_CHECKED;_SECURE_SCL=0;_ITERATOR_DEBUG_LEVEL=0;PX_PHYSX_DLL_NAME_POSTFIX=CHECKED;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="3"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/$(ProjectName)CHECKED.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="profile|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/GeomUtils/profile"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;&quot;./../../PhysXAPI/common&quot;;&quot;./../../PhysXAPI/geometry&quot;;&quot;./../../PhysXAPI/deprecated&quot;;&quot;./../../PhysXAPI&quot;;&quot;./../../PhysXCommon/src&quot;;&quot;./../../GeomUtils/headers&quot;;&quot;./../../GeomUtils/src&quot;;&quot;./../../GeomUtils/Opcode&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;NDEBUG;PX_PROFILE;_SECURE_SCL=0;_ITERATOR_DEBUG_LEVEL=0;PX_PHYSX_DLL_NAME_POSTFIX=PROFILE;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="3"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/$(ProjectName)PROFILE.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="release|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/GeomUtils/release"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;&quot;./../../PhysXAPI/common&quot;;&quot;./../../PhysXAPI/geometry&quot;;&quot;./../../PhysXAPI/deprecated&quot;;&quot;./../../PhysXAPI&quot;;&quot;./../../PhysXCommon/src&quot;;&quot;./../../GeomUtils/headers&quot;;&quot;./../../GeomUtils/src&quot;;&quot;./../../GeomUtils/Opcode&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;NDEBUG;_SECURE_SCL=0;_ITERATOR_DEBUG_LEVEL=0;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="3"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/$(ProjectName).lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+</Configurations>
+<References></References>
+<Files>
+  <Filter Name="header" Filter=""> <!--  -->
+    <File RelativePath="..\..\GeomUtils\headers\GuBounds3.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuBox.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuCapsule.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuGeometryQuery.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuGeomUtils.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuMeshQuery.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuPlane.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuSegment.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuSphere.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuTriangle.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuVecBox.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuVecCapsule.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuVecCone.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuVecConvex.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuVecConvexHull.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuVecCylinder.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuVecSphere.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\headers\GuVecTriangle.h">
+    </File>
+  </Filter>
+  <Filter Name="src" Filter=""> <!--  -->
+    <File RelativePath="..\..\GeomUtils\src\BigConvexData.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\ConvexHull.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\ConvexSupportTable.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\DeformableMesh.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\EPA.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\EPAFacet.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GJK.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GJKSweep.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuAdjacencies.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuBarycentricCoordinates.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuBigConvexData.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuBoxConversion.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuBoxProjection.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuCollisionModel.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuConvexEdgeFlags.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuConvexMesh.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuConvexMeshData.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuConvexUtilsInternal.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuCubeIndex.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDebug.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistancePointBox.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistancePointSegment.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistancePointTriangle.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistanceSegmentBox.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistanceSegmentSegment.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistanceSegmentTriangle.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuEdgeCache.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuEdgeList.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuEdgeListData.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuEntityReport.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuGeometryUnion.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuGeomUtilsInternal.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuGJKObjectSupport.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuHeightField.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuHeightFieldData.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuHeightFieldUtil.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuHillClimbing.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuInternalTriangleMesh.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionBoxBox.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionCapsuleBox.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionEdgeEdge.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionRayBox.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionRayCapsule.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionRayPlane.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionRaySphere.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionRayTriangle.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionSphereBox.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionTriangleBox.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionTriangleTriangle.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuMeshFactory.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuOverlapTests.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuRaycastTests.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuSweepTests.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuTriangle32.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuTriangleMesh.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuTriangleMeshData.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuTriangleVertexPointers.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\IceSupport.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\NpDeformableMesh.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\RTree.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\Serialize.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\BigConvexData.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\ConvexHull.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\ConvexSupportTable.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\DeformableMesh.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GJK.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GJKSweep.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuAdjacencies.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuBarycentricCoordinates.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuBox.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuCapsule.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuConvexMesh.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuConvexUtilsInternal.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuCubeIndex.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDebug.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistancePointBox.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistancePointSegment.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistancePointTriangle.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistanceSegmentBox.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistanceSegmentSegment.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuDistanceSegmentTriangle.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuEdgeList.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuGeometryQuery.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuGeometryUnion.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuGeomUtilsInternal.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuHeightField.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuHeightFieldUtil.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuHillClimbing.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuInternalTriangleMesh.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionBoxBox.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionEdgeEdge.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionRayBox.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionRayCapsule.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionRaySphere.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionRayTriangle.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionSphereBox.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionTriangleBox.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuIntersectionTriangleTriangle.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuMeshFactory.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuMeshQuery.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuMetaData.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuObjectBounds.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuOverlapTests.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuRaycastTests.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuSweepTests.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuTriangleMesh.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\GuVecBox.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\IceSupport.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\NpDeformableMesh.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\RTree.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\RTreeQueries.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\src\Serialize.cpp">
+    </File>
+  </Filter>
+  <Filter Name="Opcode" Filter=""> <!--  -->
+    <Filter Name="Ice" Filter=""> <!--  -->
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\CTC_PlaneAABBOverlap.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\CTC_RayAABBOverlap.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceAxes.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceContainer.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceFPU.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceHandleManager.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IcePairs.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IcePolygon.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceRevisitedRadix.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceRevisitedRadix2.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceSerialize.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceUtils.h">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceContainer.cpp">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceContainerMemoryMgmt.cpp">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceHandleManager.cpp">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IcePolygon.cpp">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceRevisitedRadix.cpp">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceRevisitedRadix2.cpp">
+      </File>
+      <File RelativePath="..\..\GeomUtils\Opcode\Ice\IceSerialize.cpp">
+      </File>
+    </Filter>
+    <Filter Name="windows" Filter=""> <!--  -->
+      <File RelativePath="..\..\GeomUtils\Opcode\windows\OPC_IceHook_WIN.h">
+      </File>
+    </Filter>
+    <File RelativePath="..\..\GeomUtils\Opcode\Opcode.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_AABBCollider.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_AABBColliderOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_AABBTree.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_BoxBoxOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_Collider.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_Common.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_CommonColliderOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_HybridModel.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_LSSAABBOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_LSSCollider.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_LSSTriOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_MeshInterface.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_ModelData.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_OBBCollider.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_OBBColliderOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_OptimizedTree.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_RayAABBOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_RayCollider.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_RayTriOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_Settings.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_SphereAABBOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_SphereCollider.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_SphereTriOverlap.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_TreeBuilders.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_VolumeCollider.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\StabCodes.h">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_AABBCollider.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_AABBTree.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_HybridModel.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_LSSCollider.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_MeshInterface.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_OBBCollider.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_OptimizedTree.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_RayCollider.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_SphereCollider.cpp">
+    </File>
+    <File RelativePath="..\..\GeomUtils\Opcode\OPC_TreeBuilders.cpp">
+    </File>
+  </Filter>
+  <Filter Name="include" Filter=""> <!--  -->
+    <File RelativePath="..\..\PhysXAPI\geometry\PxBoxGeometry.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxCapsuleGeometry.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxConvexMesh.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxConvexMeshGeometry.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxDeformableMesh.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxDeformableMeshDesc.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxGeometry.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxHeightField.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxHeightFieldDesc.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxHeightFieldFlag.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxHeightFieldGeometry.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxHeightFieldSample.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxMeshScale.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxPhysXGeomUtils.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxPlaneGeometry.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxSimpleTriangleMesh.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxSphereGeometry.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxTriangleFlags.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxTriangleMesh.h">
+    </File>
+    <File RelativePath="..\..\PhysXAPI\geometry\PxTriangleMeshGeometry.h">
+    </File>
+  </Filter>
+</Files>
+<Globals></Globals>
+</VisualStudioProject>

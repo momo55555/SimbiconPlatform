@@ -1,0 +1,267 @@
+PDParams
+#        joint name              Kp      Kd      MaxTorque    ScaleX        ScaleY        ScaleZ
+    root	3000.000000	300.000000	10000.000000	1.000000	0.200000	1.000000
+    pelvis_torso	200.000000	20.000000	10000.000000	1.000000	0.200000	1.000000
+    lHip	200.000000	20.000000	10000.000000	1.000000	0.660000	1.000000
+    rHip	200.000000	20.000000	10000.000000	1.000000	0.660000	1.000000
+    torso_head	50.000000	5.000000	10000.000000	1.000000	0.200000	1.000000
+    lShoulder	30.000000	3.000000	10000.000000	0.500000	1.000000	1.000000
+    rShoulder	30.000000	3.000000	10000.000000	0.300000	1.000000	1.000000
+    lKnee	300.000000	30.000000	10000.000000	1.000000	0.200000	1.000000
+    rKnee	300.000000	30.000000	10000.000000	1.000000	0.200000	1.000000
+    lElbow	5.000000	1.000000	10000.000000	0.200000	1.000000	1.000000
+    rElbow	5.000000	1.000000	10000.000000	0.200000	1.000000	1.000000
+    lAnkle	30.000000	3.000000	10000.000000	1.000000	0.200000	1.000000
+    rAnkle	30.000000	3.000000	10000.000000	1.000000	0.200000	1.000000
+    lToeJoint	10.000000	1.000000	10000.000000	1.000000	1.000000	1.000000
+    rToeJoint	10.000000	1.000000	10000.000000	1.000000	1.000000	1.000000
+/PDParams
+
+
+
+
+ConState 0
+	description Default state in the walking controller
+	nextState 0
+	transitionOn footDown
+	stateStance reverse
+	time 0.500000
+
+
+
+	trajectory root
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			baseTrajectory
+				0.006689 0.000378
+				0.254181 0.000378
+				0.501672 -0.000378
+				0.745819 -0.000378
+				0.989967 -0.000378
+			/baseTrajectory
+		/component
+
+		component
+			rotationAxis 0.000000 0.000000 1.000000
+			reverseTargetAngleOnStance right
+			baseTrajectory
+				0.000000 0.000000
+				0.250000 0.000000
+				0.500000 0.000000
+				0.750000 0.000000
+				1.000000 0.000000
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory SWING_Hip
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			feedback linear
+				feedbackProjectionAxis 0.000000 0.000000 1.000000
+				cd -0.300000
+				cv -0.300000
+			/feedback
+			baseTrajectory
+				0.000000 -0.500000
+				0.297659 -0.535125
+				0.602007 -0.444127
+				0.769231 -0.266476
+				0.903010 -0.146124
+				0.993311 -0.083272
+			/baseTrajectory
+		/component
+
+		component
+			rotationAxis 0.000000 0.000000 1.000000
+			reverseTargetAngleOnStance left
+			feedback linear
+				feedbackProjectionAxis 1.000000 0.000000 0.000000
+				cd 0.300000
+				cv 0.300000
+			/feedback
+			baseTrajectory
+				0.505017 -0.084616
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory SWING_Knee
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			baseTrajectory
+				0.013378 0.292735
+				0.214047 1.122802
+				0.551839 1.180385
+				0.749164 0.634524
+				0.943144 0.080433
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory STANCE_Knee
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			baseTrajectory
+				0.000000 -0.050000
+				0.297659 -0.047302
+				0.568562 -0.045890
+				0.779264 0.005244
+				0.993311 0.036705
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory SWING_Ankle
+	characterFrameRelative
+			strengthTrajectory
+				0.010033 0.055223
+				0.334448 0.277764
+				0.444816 1.018468
+			/strengthTrajectory
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			baseTrajectory
+				0.020067 1.080501
+				0.354515 0.395418
+				0.866221 -0.034284
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory STANCE_Ankle
+	characterFrameRelative
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			feedback linear
+				feedbackProjectionAxis 0.000000 0.000000 1.000000
+				cd 0.150000
+				cv 0.200000
+			/feedback
+			baseTrajectory
+				0.026756 -0.141332
+				0.418060 0.266960
+				0.989967 0.379757
+			/baseTrajectory
+		/component
+
+		component
+			rotationAxis 0.000000 0.000000 1.000000
+			baseTrajectory
+				0.000000 -0.000000
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory STANCE_Shoulder
+
+		component
+			rotationAxis 0.000000 0.000000 1.000000
+			reverseTargetAngleOnStance left
+			baseTrajectory
+				0.000000 1.570000
+				1.000000 1.570000
+			/baseTrajectory
+		/component
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			baseTrajectory
+				0.000000 -0.100000
+				0.500000 0.000000
+				1.000000 0.100000
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory SWING_Shoulder
+
+		component
+			rotationAxis 0.000000 0.000000 1.000000
+			reverseTargetAngleOnStance right
+			baseTrajectory
+				0.000000 1.570000
+				1.000000 1.570000
+			/baseTrajectory
+		/component
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			baseTrajectory
+				0.006689 0.043195
+				0.500000 0.000000
+				0.989967 -0.052132
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory STANCE_Elbow
+
+		component
+			rotationAxis 0.000000 1.000000 0.000000
+			reverseTargetAngleOnStance left
+			baseTrajectory
+				0.006689 0.218452
+				0.500000 0.000000
+				0.993311 -0.153725
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory SWING_Elbow
+
+		component
+			rotationAxis 0.000000 1.000000 0.000000
+			reverseTargetAngleOnStance left
+			baseTrajectory
+				0.006689 0.043875
+				0.500000 0.000000
+				0.996656 -0.037823
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory pelvis_torso
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			baseTrajectory
+				0.000000 0.000000
+				0.330000 0.000000
+				0.660000 0.000000
+				1.000000 0.000000
+			/baseTrajectory
+		/component
+
+		component
+			rotationAxis 0.000000 0.000000 1.000000
+			reverseTargetAngleOnStance right
+			baseTrajectory
+				0.000000 0.000000
+				0.330000 0.000000
+				0.660000 0.000000
+				1.000000 0.000000
+			/baseTrajectory
+		/component
+	/trajectory
+
+	trajectory torso_head
+
+		component
+			rotationAxis 1.000000 0.000000 0.000000
+			baseTrajectory
+			/baseTrajectory
+		/component
+	/trajectory
+/ConState
+
+
+startAtState 0
+startingStance left
+loadCharacterState ../data/controllers/bip2D/iWalkState.rs

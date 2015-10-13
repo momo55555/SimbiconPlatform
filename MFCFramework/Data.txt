@@ -1,0 +1,80 @@
+0:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+1:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+2:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+3:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+4:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+5:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+6:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+7:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+8:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+9:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+10:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+11:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+12:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+13:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+14:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+15:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+16:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+17:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+18:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+19:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+20:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+21:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+22:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+23:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+24:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+25:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+26:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+27:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+28:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+29:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+30:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+31:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+32:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+33:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+34:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+35:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+36:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+37:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+38:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	
+39:
+Pelvis:	Torso:	Head:	LUpperArm:	LLowerArm:	RUpperArm:	RLowerArm:	LUpperLeg:	LLowerLeg:	RUpperLeg:	RLowerLeg:	LFoot:	RFoot:	

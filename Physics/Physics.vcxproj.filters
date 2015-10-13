@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\PhyX3">
+      <UniqueIdentifier>{a6aa8628-c49d-42e6-b74f-8d884d6b07a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PhyX3">
+      <UniqueIdentifier>{352044be-ae85-4195-b9ad-b39303cec457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CD">
+      <UniqueIdentifier>{8f8d26f0-cef4-405f-93e7-ae9187e36e2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CD">
+      <UniqueIdentifier>{d0bb2a4b-cca2-4ef3-b0a8-555e44c67913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Forces">
+      <UniqueIdentifier>{e80b345e-1b21-44cb-97df-94860ddcd7b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Joint">
+      <UniqueIdentifier>{ae3d7a96-de92-4336-afe2-da01555c63f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Joint">
+      <UniqueIdentifier>{e5f79eca-96a1-48d0-b720-d77aec7dc282}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PxArticulatedFigure.h">
+      <Filter>Header Files\PhyX3</Filter>
+    </ClInclude>
+    <ClInclude Include="PxBodyNode.h">
+      <Filter>Header Files\PhyX3</Filter>
+    </ClInclude>
+    <ClInclude Include="PxPlane.h">
+      <Filter>Header Files\PhyX3</Filter>
+    </ClInclude>
+    <ClInclude Include="PxRigidBody.h">
+      <Filter>Header Files\PhyX3</Filter>
+    </ClInclude>
+    <ClInclude Include="PxSetupEnv.h">
+      <Filter>Header Files\PhyX3</Filter>
+    </ClInclude>
+    <ClInclude Include="RBForceAccumulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RBState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RBProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCDP.h">
+      <Filter>Header Files\CD</Filter>
+    </ClInclude>
+    <ClInclude Include="CapsuleCDP.h">
+      <Filter>Header Files\CD</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetectionPrimitive.h">
+      <Filter>Header Files\CD</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneCDP.h">
+      <Filter>Header Files\CD</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereCDP.h">
+      <Filter>Header Files\CD</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantForce.h">
+      <Filter>Header Files\Forces</Filter>
+    </ClInclude>
+    <ClInclude Include="Force.h">
+      <Filter>Header Files\Forces</Filter>
+    </ClInclude>
+    <ClInclude Include="TimedConstantForce.h">
+      <Filter>Header Files\Forces</Filter>
+    </ClInclude>
+    <ClInclude Include="BallInSocketJoint.h">
+      <Filter>Header Files\Joint</Filter>
+    </ClInclude>
+    <ClInclude Include="HingeJoint.h">
+      <Filter>Header Files\Joint</Filter>
+    </ClInclude>
+    <ClInclude Include="Joint.h">
+      <Filter>Header Files\Joint</Filter>
+    </ClInclude>
+    <ClInclude Include="StiffJoint.h">
+      <Filter>Header Files\Joint</Filter>
+    </ClInclude>
+    <ClInclude Include="UniversalJoint.h">
+      <Filter>Header Files\Joint</Filter>
+    </ClInclude>
+    <ClInclude Include="ArticulatedFigure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArticulatedRigidBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="collisionLibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NullWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsGlobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysX3World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PreCollisionQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RBUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PxArticulatedFigure.cpp">
+      <Filter>Source Files\PhyX3</Filter>
+    </ClCompile>
+    <ClCompile Include="PxBodyNode.cpp">
+      <Filter>Source Files\PhyX3</Filter>
+    </ClCompile>
+    <ClCompile Include="PxPlane.cpp">
+      <Filter>Source Files\PhyX3</Filter>
+    </ClCompile>
+    <ClCompile Include="PxRigidBody.cpp">
+      <Filter>Source Files\PhyX3</Filter>
+    </ClCompile>
+    <ClCompile Include="PxSetupEnv.cpp">
+      <Filter>Source Files\PhyX3</Filter>
+    </ClCompile>
+    <ClCompile Include="RBStatecpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RBProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCDP.cpp">
+      <Filter>Source Files\CD</Filter>
+    </ClCompile>
+    <ClCompile Include="CapsuleCDP.cpp">
+      <Filter>Source Files\CD</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetectionPrimitive.cpp">
+      <Filter>Source Files\CD</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneCDP.cpp">
+      <Filter>Source Files\CD</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereCDP.cpp">
+      <Filter>Source Files\CD</Filter>
+    </ClCompile>
+    <ClCompile Include="BallInSocketJoint.cpp">
+      <Filter>Source Files\Joint</Filter>
+    </ClCompile>
+    <ClCompile Include="HingeJoint.cpp">
+      <Filter>Source Files\Joint</Filter>
+    </ClCompile>
+    <ClCompile Include="Joint.cpp">
+      <Filter>Source Files\Joint</Filter>
+    </ClCompile>
+    <ClCompile Include="StiffJoint.cpp">
+      <Filter>Source Files\Joint</Filter>
+    </ClCompile>
+    <ClCompile Include="UniversalJoint.cpp">
+      <Filter>Source Files\Joint</Filter>
+    </ClCompile>
+    <ClCompile Include="RBForceAccumulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArticulatedFigure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArticulatedRigidBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsGlobals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysX3World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCollisionQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RBUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

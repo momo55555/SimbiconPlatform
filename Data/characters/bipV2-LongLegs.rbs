@@ -1,0 +1,290 @@
+
+# Define the rigid bodies that will make up the character - this is the same as the normal bip3d, but has toes
+
+A_RigidBody 
+	name pelvis
+	mass 12.9
+	moi 0.0705 0.11 0.13
+	CDP_Sphere 0 -0.075 0 0.12
+	position 0 1.035 0
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+
+A_RigidBody 
+	name torso
+	mass 22.5
+	moi 0.34 0.21 0.46	
+	CDP_Sphere 0 0 0.01 0.11
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody 
+	name head
+	mass 5.2
+	moi 0.04 0.02 0.042
+	CDP_Sphere 0 0.04 0 0.11
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name lUpperarm
+	mass 2.2
+	moi 0.005 0.02 0.02
+	CDP_Capsule -0.15 0 0 0.15 0 0 0.05
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+
+A_RigidBody
+	name lLowerarm
+	mass 1.7
+	moi 0.0024 0.025 0.025
+	CDP_Capsule -0.15 0 0 0.15 0 0 0.05	
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name rUpperarm
+	mass 2.2
+	moi 0.005 0.02 0.02
+	CDP_Capsule -0.15 0 0 0.15 0 0 0.05
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+
+A_RigidBody
+	name rLowerarm
+	mass 1.7
+	moi 0.0024 0.025 0.025
+	CDP_Capsule -0.15 0 0 0.15 0 0 0.05	
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name lUpperleg
+	mass 6.6
+	moi 0.15 0.022 0.15
+	CDP_Capsule 0 0.12 0 0 -0.26 0 0.05
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+			
+A_RigidBody
+	name lLowerleg
+	mass 6.4
+	moi 0.3 0.008 0.3
+	CDP_Capsule 0 0.24 0.0 0 -0.4 0 0.05
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+
+A_RigidBody
+	name rUpperleg
+	mass 6.6
+	moi 0.15 0.022 0.15
+	CDP_Capsule 0 0.12 0 0 -0.26 0 0.05
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+			
+A_RigidBody
+	name rLowerleg
+	mass 6.4
+	moi 0.3 0.008 0.3
+	CDP_Capsule 0 0.24 0 0 -0.4 0 0.05
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+
+A_RigidBody
+	name lFoot
+	mass 1.00 
+	moi 0.007 0.008 0.002
+	CDP_Box -0.025 -0.033 -0.09 0.025 0.005 0.055 	
+	
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+	
+	ODEGroundParameters 0.0002 0.2
+	
+		
+/End
+
+A_RigidBody
+	name rFoot
+	mass 1
+	moi 0.007 0.008 0.002
+	
+	CDP_Box -0.025 -0.033 -0.09 0.025 0.005 0.055 
+
+#	CDP_Sphere 0.025 -0.025 -0.08 0.01
+#	CDP_Sphere -0.025 -0.025 -0.08 0.01
+#	CDP_Sphere 0.02 -0.025 0.045 0.01
+#	CDP_Sphere -0.02 -0.025 0.045 0.01		
+
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+	
+	ODEGroundParameters 0.0002 0.2
+/End
+
+A_RigidBody
+	name lToes
+	mass 0.2
+	moi 0.002 0.002 0.0005
+	CDP_Sphere 0.0 -0.005 0.025 0.01
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+	ODEGroundParameters 0.0002 0.2
+/End
+
+A_RigidBody
+	name rToes
+	mass 0.2
+	moi 0.002 0.002 0.0005
+	CDP_Sphere 0.0 -0.005 0.025 0.01
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+	
+	ODEGroundParameters 0.0002 0.2
+/End
+
+
+ArticulatedFigure
+	root pelvis
+	
+	ballInSocketJoint 1 0 0 0 1 0
+		name pelvis_torso
+		parent pelvis
+		child torso
+		jointPPos 0 0.17 -0.035
+		jointCPos 0 -0.23 -0.01
+		jointLimits -0.6 0.6 -0.6 0.6 -0.6 0.6
+	/Joint
+	
+	ballInSocketJoint 1 0 0 0 1 0
+		name torso_head
+		parent torso
+		child head
+		jointPPos 0 0.1 -0.00
+		jointCPos 0 -0.16 -0.025
+		jointLimits -0.6 0.6 -0.6 0.6 -0.6 0.6		
+	/Joint	
+	
+
+	ballInSocketJoint 0 0 1 1 0 0
+		name lShoulder
+		parent torso
+		child lUpperarm
+		jointPPos 0.20 0.07 0.02
+		jointCPos -0.17 0 0
+		jointLimits -1.7 1.7 -1.5 1.5 -1.5 1.5
+	/Joint
+
+	ballInSocketJoint 0 0 1 1 0 0
+		name rShoulder
+		parent torso
+		child rUpperarm
+		jointPPos -0.20 0.07 0.02
+		jointCPos 0.17 0 0
+		jointLimits -1.7 1.7 -1.5 1.5 -1.5 1.5
+	/Joint
+	
+	hingeJoint 0 1 0
+		name lElbow
+		parent lUpperarm
+		child lLowerarm
+		jointPPos 0.175 0 0.006
+		jointCPos -0.215 0 0
+		jointLimits -2.7 0
+	/Joint
+
+	hingeJoint 0 -1 0
+		name rElbow
+		parent rUpperarm
+		child rLowerarm
+		jointPPos -0.175 0 0.006
+		jointCPos 0.215 0 0
+		jointLimits -2.7 0
+	/Joint
+	
+	ballInSocketJoint 1 0 0 0 1 0
+		name lHip
+		parent pelvis
+		child lUpperleg
+		jointPPos 0.1 -0.05 0.0
+		jointCPos 0 0.21 0
+		jointLimits -1.3 1.9 -1 1 -0.25 1
+	/Joint	
+	
+	hingeJoint 1 0 0
+		name lKnee
+		parent lUpperleg
+		child lLowerleg
+		jointPPos 0 -0.26 0
+		jointCPos 0 0.46 0
+		jointLimits 0 2.5
+	/Joint
+	
+	universalJoint 1 0 0 0 0 1
+		name lAnkle
+		parent lLowerleg
+		child lFoot
+		jointPPos 0 -0.47 0.01
+		jointCPos 0.0 0.02 -0.04
+		jointLimits -0.75 0.75 -0.75 0.75
+	/Joint
+
+	hingeJoint 1 0 0
+		name lToeJoint
+		parent lFoot
+		child lToes
+		jointPPos 0 -0.02 0.05
+		jointCPos 0 0 -0.025
+		jointLimits -0.52 0.02
+	/Joint
+	
+	ballInSocketJoint 1 0 0 0 1 0
+		name rHip
+		parent pelvis
+		child rUpperleg
+		jointPPos -0.1 -0.05 0.0
+		jointCPos 0 0.21 0
+		jointLimits -1.3 1.9 -1 1 -1 0.25
+	/Joint
+
+	hingeJoint 1 0 0
+		name rKnee
+		parent rUpperleg
+		child rLowerleg
+		jointPPos 0 -0.26 0
+		jointCPos 0 0.46 0
+		jointLimits 0 2.5
+	/Joint
+
+	universalJoint 1 0 0 0 0 -1
+		name rAnkle
+		parent rLowerleg
+		child rFoot
+		jointPPos 0 -0.47 0.01
+		jointCPos 0.0 0.02 -0.04
+		jointLimits -0.75 0.75 -0.75 0.75
+	/Joint
+
+	hingeJoint 1 0 0
+		name rToeJoint
+		parent rFoot
+		child rToes
+		jointPPos 0 -0.02 0.05
+		jointCPos 0 0 -0.025
+		jointLimits -0.52 0.02
+	/Joint
+	
+/ArticulatedFigure

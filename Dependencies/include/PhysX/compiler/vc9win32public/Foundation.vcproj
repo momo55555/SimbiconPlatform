@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+ProjectType="Visual C++"
+Version="9.00"
+Name="Foundation"
+>
+<Platforms>
+<Platform Name="Win32"/>
+</Platforms>
+<Configurations>
+  <Configuration
+    Name="debug|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/Foundation/debug"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;_DEBUG;PX_CHECKED;PX_PHYSX_DLL_NAME_POSTFIX=DEBUG;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="0"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  /Zi "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="1"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/$(ProjectName)DEBUG.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="checked|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/Foundation/checked"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;NDEBUG;PX_CHECKED;_SECURE_SCL=0;_ITERATOR_DEBUG_LEVEL=0;PX_PHYSX_DLL_NAME_POSTFIX=CHECKED;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="3"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/$(ProjectName)CHECKED.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="profile|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/Foundation/profile"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;NDEBUG;PX_PROFILE;_SECURE_SCL=0;_ITERATOR_DEBUG_LEVEL=0;PX_PHYSX_DLL_NAME_POSTFIX=PROFILE;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="3"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/$(ProjectName)PROFILE.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="release|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/Foundation/release"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;NDEBUG;_SECURE_SCL=0;_ITERATOR_DEBUG_LEVEL=0;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="3"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/$(ProjectName).lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+</Configurations>
+<References></References>
+<Files>
+  <Filter Name="include" Filter=""> <!--  -->
+    <Filter Name="windows" Filter=""> <!--  -->
+      <File RelativePath="..\..\PxFoundation\windows\PxWindowsIntrinsics.h">
+      </File>
+      <File RelativePath="..\..\PxFoundation\windows\PxWindowsString.h">
+      </File>
+    </Filter>
+    <File RelativePath="..\..\PxFoundation\Px.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxAllocatorCallback.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxAssert.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxBitAndData.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxBounds3.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxBroadcastingAllocator.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxErrorCallback.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxErrors.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxFlags.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxFoundation.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxIntrinsics.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxMat33.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxMat44.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxMath.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxPreprocessor.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxQuat.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxSimpleTypes.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxStrideIterator.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxString.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxTransform.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxVec2.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxVec3.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxVec4.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\PxVersionNumber.h">
+    </File>
+  </Filter>
+  <Filter Name="header" Filter=""> <!--  -->
+    <Filter Name="windows" Filter=""> <!--  -->
+      <File RelativePath="..\..\PxFoundation\internal\include\windows\PsPAGPUEventSrc.h">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\include\windows\PsWindowsAoS.h">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\include\windows\PsWindowsFile.h">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\include\windows\PsWindowsInclude.h">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\include\windows\PsWindowsInlineAoS.h">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\include\windows\PsWindowsIntrinsics.h">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\include\windows\PsWindowsString.h">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\include\windows\PsWindowsTrigConstants.h">
+      </File>
+    </Filter>
+    <File RelativePath="..\..\PxFoundation\internal\include\Ps.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsAlignedMalloc.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsAlloca.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsAllocator.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsAoS.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsArray.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsAtomic.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsBasicTemplates.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsBitUtils.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsCpu.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsFastIPC.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsFastMemory.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsFile.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsFoundation.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsFPU.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsHash.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsHashInternals.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsHashMap.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsHashSet.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsInlineAllocator.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsInlineAoS.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsInlineArray.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsIntrinsics.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsIPC.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsMathUtils.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsMemoryMappedFile.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsMutex.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsNoCopy.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsPAEventSrc.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsPAProfileZone.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsPlane.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsPool.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsPrintString.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsReflection.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsRingBuffer.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsSList.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsSocket.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsSort.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsSortInternals.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsString.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsSync.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsTempAllocator.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsThread.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsTime.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsUserAllocated.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsUtilities.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsVecMath.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsVecMathAoSScalar.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsVecMathAoSScalarInline.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsVecMathAosTest.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsVecMathUtilities.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsVecQuat.h">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\include\PsVecTransform.h">
+    </File>
+  </Filter>
+  <Filter Name="src" Filter=""> <!--  -->
+    <Filter Name="windows" Filter=""> <!--  -->
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsAtomic.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsCpu.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsFPU.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsMemoryMappedFile.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsMutex.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsPAEventSrc.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsPrintString.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsSList.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsSocket.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsSync.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsThread.cpp">
+      </File>
+      <File RelativePath="..\..\PxFoundation\internal\src\windows\PsWindowsTime.cpp">
+      </File>
+    </Filter>
+    <File RelativePath="..\..\PxFoundation\internal\src\PsAllocator.cpp">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\src\PsFastIPC.cpp">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\src\PsFoundation.cpp">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\src\PsMathUtils.cpp">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\src\PsTempAllocator.cpp">
+    </File>
+    <File RelativePath="..\..\PxFoundation\internal\src\PsUtilities.cpp">
+    </File>
+  </Filter>
+</Files>
+<Globals></Globals>
+</VisualStudioProject>

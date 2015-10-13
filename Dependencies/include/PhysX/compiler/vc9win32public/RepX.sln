@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RepX", "RepX.vcproj", "{7F08B8B8-D4C8-6A98-CDE0-B558AF189542}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RepXUpgrader", "RepXUpgrader.vcproj", "{B944B67C-7AE0-70EA-6E20-A2C45D2C708F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		checked|Win32 = checked|Win32
+		debug|Win32 = debug|Win32
+		profile|Win32 = profile|Win32
+		release|Win32 = release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F08B8B8-D4C8-6A98-CDE0-B558AF189542}.checked|Win32.ActiveCfg = checked|Win32
+		{7F08B8B8-D4C8-6A98-CDE0-B558AF189542}.checked|Win32.Build.0 = checked|Win32
+		{7F08B8B8-D4C8-6A98-CDE0-B558AF189542}.debug|Win32.ActiveCfg = debug|Win32
+		{7F08B8B8-D4C8-6A98-CDE0-B558AF189542}.debug|Win32.Build.0 = debug|Win32
+		{7F08B8B8-D4C8-6A98-CDE0-B558AF189542}.profile|Win32.ActiveCfg = profile|Win32
+		{7F08B8B8-D4C8-6A98-CDE0-B558AF189542}.profile|Win32.Build.0 = profile|Win32
+		{7F08B8B8-D4C8-6A98-CDE0-B558AF189542}.release|Win32.ActiveCfg = release|Win32
+		{7F08B8B8-D4C8-6A98-CDE0-B558AF189542}.release|Win32.Build.0 = release|Win32
+		{B944B67C-7AE0-70EA-6E20-A2C45D2C708F}.checked|Win32.ActiveCfg = checked|Win32
+		{B944B67C-7AE0-70EA-6E20-A2C45D2C708F}.checked|Win32.Build.0 = checked|Win32
+		{B944B67C-7AE0-70EA-6E20-A2C45D2C708F}.debug|Win32.ActiveCfg = debug|Win32
+		{B944B67C-7AE0-70EA-6E20-A2C45D2C708F}.debug|Win32.Build.0 = debug|Win32
+		{B944B67C-7AE0-70EA-6E20-A2C45D2C708F}.profile|Win32.ActiveCfg = profile|Win32
+		{B944B67C-7AE0-70EA-6E20-A2C45D2C708F}.profile|Win32.Build.0 = profile|Win32
+		{B944B67C-7AE0-70EA-6E20-A2C45D2C708F}.release|Win32.ActiveCfg = release|Win32
+		{B944B67C-7AE0-70EA-6E20-A2C45D2C708F}.release|Win32.Build.0 = release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddins) = postSolution
+	EndGlobalSection
+EndGlobal

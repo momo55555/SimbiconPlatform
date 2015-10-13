@@ -1,0 +1,449 @@
+# Define the rigid bodies that will make up the character
+
+A_RigidBody 
+	name body
+	mesh ../data/models/raptor/body.obj
+	mass 25.7
+	moi 2.5 2.35 0.22
+	CDP_Capsule 0 0 0.2 0 0 -0.1 0.12
+	colour 0.6 0.6 0.6 1
+	position 0 1.035 0
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+
+A_RigidBody 
+	name neck
+	mesh ../data/models/raptor/neck.obj
+	mass 5
+	moi 0.074 0.013 0.073
+	CDP_Capsule 0 0.10 0 0 -0.12 0 0.07
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody 
+	name head
+	mesh ../data/models/raptor/head.obj
+	colour 0.6 0.6 0.6 1
+	mesh ../data/models/raptor/teeth.obj
+	colour 1.0 1.0 1.0 1
+	mesh ../data/models/raptor/eyes.obj
+	colour 0.8 0.8 0.8 1
+	mesh ../data/models/raptor/eyes_2.obj
+	colour 0.2 0.2 0.2 1
+	mesh ../data/models/raptor/eyes_3.obj
+	colour 0.4 0.4 0.4 1
+	
+	mass 5.4
+	moi 0.053 0.04 0.02
+	CDP_Capsule 0 0 0.10 0 0 -0.05 0.08
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name lUpperleg
+	mesh ../data/models/raptor/lupperleg.obj
+	mass 5.12
+	moi 0.06 0.02 0.05
+	CDP_Sphere 0 -0.12 0.03 0.08
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+			
+A_RigidBody
+	name lLowerleg
+	mesh ../data/models/raptor/llowerleg.obj
+	mass 3.6
+	moi 0.04 0.009 0.035
+	CDP_Capsule 0 0.10 0.0 0 -0.1 0 0.05
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name lUpperFoot
+	mesh ../data/models/raptor/lupperfoot.obj
+	mass 1.92
+	moi 0.01 0.003 0.01
+	CDP_Capsule 0 0.06 0.0 0 -0.05 0 0.05
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name lFoot
+	mesh ../data/models/raptor/lfoot.obj
+	colour 0.6 0.6 0.6 1
+
+	mesh ../data/models/raptor/lclaws.obj
+	colour 0.3 0.3 0.3 1
+
+
+	mass 1.6
+	moi 0.007 0.007 0.003
+	CDP_Box 0.07 0.03 0.08 -0.07 -0.04 -0.1
+	
+	frictionCoefficient 1.5
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name rUpperleg
+	mesh ../data/models/raptor/rupperleg.obj
+	mass 5.12
+	moi 0.06 0.02 0.05
+	CDP_Sphere 0 -0.12 0.03 0.08
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+			
+A_RigidBody
+	name rLowerleg
+	mesh ../data/models/raptor/rlowerleg.obj
+	mass 3.6
+	moi 0.04 0.009 0.035
+	CDP_Capsule 0 0.10 0.0 0 -0.1 0 0.05
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name rUpperFoot
+	mesh ../data/models/raptor/rupperfoot.obj
+	mass 1.92
+	moi 0.01 0.003 0.01
+	CDP_Capsule 0 0.06 0.0 0 -0.05 0 0.05
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name rFoot
+	mesh ../data/models/raptor/rfoot.obj
+	colour 0.6 0.6 0.6 1
+	mesh ../data/models/raptor/rclaws.obj
+	colour 0.3 0.3 0.3 1	
+	mass 1.6
+	moi 0.007 0.007 0.003
+	CDP_Box 0.07 0.03 0.08 -0.07 -0.04 -0.1
+	frictionCoefficient 1.5
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name lUpperarm
+	mesh ../data/models/raptor/lupperarm.obj
+	mass 0.8 
+	moi 0.003 0.001 0.003
+	CDP_Capsule 0 -0.07 0 0 0.07 0 0.03
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name lLowerarm
+	mesh ../data/models/raptor/llowerarm.obj
+	colour 0.6 0.6 0.6 1
+	mesh ../data/models/raptor/lFingerClaws.obj
+	colour 0.3 0.3 0.3 1	
+	mass 0.7 
+	moi 0.003 0.001 0.003
+	CDP_Capsule 0 -0.06 0.02 0 0.08 0 0.03
+	CDP_Capsule 0 -0.07 0 0 -0.12 -0.08 0.03
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name rLowerarm
+	mesh ../data/models/raptor/rlowerarm.obj
+	colour 0.6 0.6 0.6 1
+	mesh ../data/models/raptor/rFingerClaws.obj
+	colour 0.3 0.3 0.3 1
+	mass 0.7 
+	moi 0.003 0.001 0.003
+	CDP_Capsule 0 -0.06 0.02 0 0.08 0 0.03
+	CDP_Capsule 0 -0.07 0 0 -0.12 -0.08 0.03
+	
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name rUpperarm
+	mesh ../data/models/raptor/rupperarm.obj
+	mass 0.8 
+	moi 0.003 0.001 0.003
+	CDP_Capsule 0 -0.07 0 0 0.07 0 0.03
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+
+A_RigidBody 
+	name tail1
+	mesh ../data/models/raptor/tail_1.obj
+	mass 3.8
+	moi 0.02 0.02 0.01
+	CDP_Capsule 0 0 0.08 0 0 -0.08 0.08
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody 
+	name tail2
+	mesh ../data/models/raptor/tail_2.obj
+	mass 3.4
+	moi 0.018 0.018 0.01
+	CDP_Capsule 0 0 0.06 0 0 -0.06 0.065
+	colour 0.55 0.55 0.55 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody 
+	name tail3
+	mesh ../data/models/raptor/tail_3.obj
+	mass 3.01
+	moi 0.016 0.016 0.01
+	CDP_Capsule 0 0 0.06 0 0 -0.06 0.05
+	colour 0.5 0.5 0.5 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody 
+	name tail4
+	mesh ../data/models/raptor/tail_4.obj
+	mass 1.75
+	moi 0.01 0.01 0.005
+	CDP_Capsule 0 0 0.06 0 0 -0.06 0.04
+	colour 0.45 0.45 0.45 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody 
+	name tail5
+	mesh ../data/models/raptor/tail_5.obj
+	mass 1.3
+	moi 0.01 0.01 0.005
+	CDP_Capsule 0 0 0.08 0 0 -0.08 0.03
+	colour 0.4 0.4 0.4 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody 
+	name tail6
+	mesh ../data/models/raptor/tail_6.obj
+	mass 1.0
+	moi 0.01 0.01 0.005
+	CDP_Capsule 0 0 0.2 0 0 0 0.02
+	colour 0.35 0.35 0.35 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+
+ArticulatedFigure
+	root body
+	
+	ballInSocketJoint 1 0 0 0 1 0
+		name body_neck
+		parent body
+		child neck
+		jointPPos 0 0.05 0.35
+		jointCPos 0 -0.16 0.02
+		jointLimits -0.6 1.0 -0.6 0.6 -0.6 0.6
+	/Joint
+
+	ballInSocketJoint 1 0 0 0 1 0
+		name neck_head
+		parent neck
+		child head
+		jointPPos 0 0.12 0.01
+		jointCPos 0 0.03 -0.12
+		jointLimits -1.0 0.6 -0.6 0.6 -0.6 0.6
+	/Joint
+	
+	ballInSocketJoint 1 0 0 0 1 0
+		name lHip
+		parent body
+		child lUpperleg
+		jointPPos 0.07 0.03 -0.1
+		jointCPos 0 0.06 0
+		jointLimits -1.2 0.8 -0.3 0.75 -0.25 0.25
+	/Joint
+	
+
+	ballInSocketJoint 1 0 0 0 1 0
+		name rHip
+		parent body
+		child rUpperleg
+		jointPPos -0.07 0.03 -0.1
+		jointCPos 0 0.06 0
+		jointLimits -1.2 0.8 -0.75 0.3 -0.25 0.25
+	/Joint	
+	
+	
+	hingeJoint 1 0 0
+		name lKnee
+		parent lUpperleg
+		child lLowerleg
+		jointPPos 0 -0.20 0.04
+		jointCPos 0 0.135 0.03
+		jointLimits 0.3 2.0
+	/Joint
+
+
+	
+	hingeJoint 1 0 0
+		name rKnee
+		parent rUpperleg
+		child rLowerleg
+		jointPPos 0 -0.20 0.04
+		jointCPos 0 0.135 0.03
+		jointLimits 0.3 2.0
+	/Joint	
+	
+	hingeJoint 1 0 0
+		name lAnkle
+		parent lLowerleg
+		child lUpperFoot
+		jointPPos 0.005 -0.14 -0.01
+		jointCPos 0 0.09 -0.01
+		jointLimits -1.75 0.52
+	/Joint
+
+	hingeJoint 1 0 0
+		name rAnkle
+		parent rLowerleg
+		child rUpperFoot
+		jointPPos -0.005 -0.14 -0.01
+		jointCPos 0 0.09 -0.01
+		jointLimits -1.75 0.52
+	/Joint
+
+	universalJoint 1 0 0 0 0 1
+		name lToeJoint
+		parent lUpperFoot
+		child lFoot
+		jointPPos 0 -0.10 0.01
+		jointCPos 0 0.03 -0.07
+		jointLimits -1.52 1.75 -0.52 0.52
+	/Joint
+
+	universalJoint 1 0 0 0 0 1
+		name rToeJoint
+		parent rUpperFoot
+		child rFoot
+		jointPPos 0 -0.10 0.01
+		jointCPos 0 0.03 -0.07
+		jointLimits -1.52 1.75 -0.52 0.52
+	/Joint
+
+	hingeJoint 1 0 0
+		name lShoulder
+		parent body
+		child lUpperarm
+		jointPPos 0.08 0.04 0.33
+		jointCPos 0 0.08 0.0
+		jointLimits -0.52 1.52
+	/Joint
+
+	hingeJoint 1 0 0
+		name lElbow
+		parent lUpperarm
+		child lLowerarm
+		jointPPos 0.0 -0.09 0
+		jointCPos 0 0.12 0.0
+		jointLimits -1.52 0.52
+	/Joint
+
+	hingeJoint 1 0 0
+		name rElbow
+		parent rUpperarm
+		child rLowerarm
+		jointPPos 0.0 -0.09 0
+		jointCPos 0 0.12 0.0
+		jointLimits -1.52 0.52
+	/Joint
+
+	hingeJoint 1 0 0
+		name rShoulder
+		parent body
+		child rUpperarm
+		jointPPos -0.08 0.04 0.33
+		jointCPos 0 0.08 0.0
+		jointLimits -0.52 1.52
+	/Joint
+
+	universalJoint 1 0 0 0 1 0
+		name tail_1
+		parent body
+		child tail1
+		jointPPos 0 0.03 -0.28
+		jointCPos 0 0 0.08
+		jointLimits -0.3 0.3 -0.3 0.3
+	/Joint
+	
+	universalJoint 1 0 0 0 1 0
+		name tail_2
+		parent tail1
+		child tail2
+		jointPPos 0 0.0 -0.11
+		jointCPos 0 0 0.09
+		jointLimits -0.3 0.3 -0.3 0.3
+	/Joint
+	
+	universalJoint 1 0 0 0 1 0
+		name tail_3
+		parent tail2
+		child tail3
+		jointPPos 0 0.0 -0.1
+		jointCPos 0 0 0.1
+		jointLimits -0.3 0.3 -0.3 0.3
+	/Joint
+
+	universalJoint 1 0 0 0 1 0
+		name tail_4
+		parent tail3
+		child tail4
+		jointPPos 0 0.0 -0.1
+		jointCPos 0 0 0.1
+		jointLimits -0.3 0.3 -0.3 0.3
+	/Joint	
+
+	universalJoint 1 0 0 0 1 0
+		name tail_5
+		parent tail4
+		child tail5
+		jointPPos 0 0.0 -0.1
+		jointCPos 0 0 0.09
+		jointLimits -0.3 0.3 -0.3 0.3
+	/Joint	
+
+	universalJoint 1 0 0 0 1 0
+		name tail_6
+		parent tail5
+		child tail6
+		jointPPos 0 0.0 -0.1
+		jointCPos 0 0 0.22
+		jointLimits -0.3 0.3 -0.3 0.3
+	/Joint	
+	
+/ArticulatedFigure
+

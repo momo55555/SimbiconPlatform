@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+ProjectType="Visual C++"
+Version="9.00"
+Name="RepXUpgrader"
+>
+<Platforms>
+<Platform Name="Win32"/>
+</Platforms>
+<Configurations>
+  <Configuration
+    Name="debug|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/RepXUpgrader/debug"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;&quot;./../../PhysXProfileSDK/sdk/src&quot;;&quot;./../../PhysXAPI/common&quot;;&quot;./../../PhysXAPI/geometry&quot;;&quot;./../../PhysXAPI/pvd&quot;;&quot;./../../PhysXAPI/cooking&quot;;&quot;./../../PhysXAPI/deformable&quot;;&quot;./../../PhysXAPI/particles&quot;;&quot;./../../PhysXAPI/extensions&quot;;&quot;./../../PhysXAPI/cloth&quot;;&quot;./../../PhysXAPI&quot;;&quot;./../../PhysXCommon/src&quot;;&quot;./../../GeomUtils/headers&quot;;&quot;./../../GeomUtils/src&quot;;&quot;./../../GeomUtils/Opcode&quot;;&quot;./../../PhysX/src&quot;;&quot;./../../PhysX/src/buffering&quot;;&quot;./../../PhysX/src/particles&quot;;&quot;./../../PhysX/src/deformable&quot;;&quot;./../../LowLevel/API/include&quot;;&quot;./../../LowLevel/software/include&quot;;&quot;./../../LowLevel/common/include/utils&quot;;&quot;./../../LowLevel/common/include/math&quot;;&quot;./../../SceneQuery&quot;;&quot;./../../SimulationController/include&quot;;&quot;./../../SimulationController/src&quot;;&quot;./../../SimulationController/src/framework&quot;;&quot;./../../PvdRuntime/src&quot;;&quot;./../../RepX/include&quot;;&quot;./../../RepX/src&quot;;&quot;./../../PhysXMetaData/core/include&quot;;&quot;./../../PhysXMetaData/extensions/include&quot;;&quot;./../../RepXUpgrader/include&quot;;&quot;./../../RepXUpgrader/src&quot;;&quot;./../../PxTask/include&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;_DEBUG;PX_CHECKED;PX_PHYSX_DLL_NAME_POSTFIX=DEBUG;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="0"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  /Zi "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="1"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/RepXUpgrader3DEBUG.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="checked|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/RepXUpgrader/checked"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;&quot;./../../PhysXProfileSDK/sdk/src&quot;;&quot;./../../PhysXAPI/common&quot;;&quot;./../../PhysXAPI/geometry&quot;;&quot;./../../PhysXAPI/pvd&quot;;&quot;./../../PhysXAPI/cooking&quot;;&quot;./../../PhysXAPI/deformable&quot;;&quot;./../../PhysXAPI/particles&quot;;&quot;./../../PhysXAPI/extensions&quot;;&quot;./../../PhysXAPI/cloth&quot;;&quot;./../../PhysXAPI&quot;;&quot;./../../PhysXCommon/src&quot;;&quot;./../../GeomUtils/headers&quot;;&quot;./../../GeomUtils/src&quot;;&quot;./../../GeomUtils/Opcode&quot;;&quot;./../../PhysX/src&quot;;&quot;./../../PhysX/src/buffering&quot;;&quot;./../../PhysX/src/particles&quot;;&quot;./../../PhysX/src/deformable&quot;;&quot;./../../LowLevel/API/include&quot;;&quot;./../../LowLevel/software/include&quot;;&quot;./../../LowLevel/common/include/utils&quot;;&quot;./../../LowLevel/common/include/math&quot;;&quot;./../../SceneQuery&quot;;&quot;./../../SimulationController/include&quot;;&quot;./../../SimulationController/src&quot;;&quot;./../../SimulationController/src/framework&quot;;&quot;./../../PvdRuntime/src&quot;;&quot;./../../RepX/include&quot;;&quot;./../../RepX/src&quot;;&quot;./../../PhysXMetaData/core/include&quot;;&quot;./../../PhysXMetaData/extensions/include&quot;;&quot;./../../RepXUpgrader/include&quot;;&quot;./../../RepXUpgrader/src&quot;;&quot;./../../PxTask/include&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;NDEBUG;PX_CHECKED;_SECURE_SCL=0;_ITERATOR_DEBUG_LEVEL=0;PX_PHYSX_DLL_NAME_POSTFIX=CHECKED;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="3"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/RepXUpgrader3CHECKED.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="profile|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/RepXUpgrader/profile"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;&quot;./../../PhysXProfileSDK/sdk/src&quot;;&quot;./../../PhysXAPI/common&quot;;&quot;./../../PhysXAPI/geometry&quot;;&quot;./../../PhysXAPI/pvd&quot;;&quot;./../../PhysXAPI/cooking&quot;;&quot;./../../PhysXAPI/deformable&quot;;&quot;./../../PhysXAPI/particles&quot;;&quot;./../../PhysXAPI/extensions&quot;;&quot;./../../PhysXAPI/cloth&quot;;&quot;./../../PhysXAPI&quot;;&quot;./../../PhysXCommon/src&quot;;&quot;./../../GeomUtils/headers&quot;;&quot;./../../GeomUtils/src&quot;;&quot;./../../GeomUtils/Opcode&quot;;&quot;./../../PhysX/src&quot;;&quot;./../../PhysX/src/buffering&quot;;&quot;./../../PhysX/src/particles&quot;;&quot;./../../PhysX/src/deformable&quot;;&quot;./../../LowLevel/API/include&quot;;&quot;./../../LowLevel/software/include&quot;;&quot;./../../LowLevel/common/include/utils&quot;;&quot;./../../LowLevel/common/include/math&quot;;&quot;./../../SceneQuery&quot;;&quot;./../../SimulationController/include&quot;;&quot;./../../SimulationController/src&quot;;&quot;./../../SimulationController/src/framework&quot;;&quot;./../../PvdRuntime/src&quot;;&quot;./../../RepX/include&quot;;&quot;./../../RepX/src&quot;;&quot;./../../PhysXMetaData/core/include&quot;;&quot;./../../PhysXMetaData/extensions/include&quot;;&quot;./../../RepXUpgrader/include&quot;;&quot;./../../RepXUpgrader/src&quot;;&quot;./../../PxTask/include&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;NDEBUG;PX_PROFILE;_SECURE_SCL=0;_ITERATOR_DEBUG_LEVEL=0;PX_PHYSX_DLL_NAME_POSTFIX=PROFILE;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="3"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/RepXUpgrader3PROFILE.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="release|Win32"
+    OutputDirectory="./../../lib/win32"
+    IntermediateDirectory="./Win32/RepXUpgrader/release"
+    ConfigurationType="4"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;./../../PxFoundation&quot;;&quot;./../../PxFoundation/internal/include&quot;;&quot;./../../PhysXProfileSDK/sdk/include&quot;;&quot;./../../PhysXVisualDebuggerSDK/PVDCommLayer/Public&quot;;&quot;./../../PhysXProfileSDK/sdk/src&quot;;&quot;./../../PhysXAPI/common&quot;;&quot;./../../PhysXAPI/geometry&quot;;&quot;./../../PhysXAPI/pvd&quot;;&quot;./../../PhysXAPI/cooking&quot;;&quot;./../../PhysXAPI/deformable&quot;;&quot;./../../PhysXAPI/particles&quot;;&quot;./../../PhysXAPI/extensions&quot;;&quot;./../../PhysXAPI/cloth&quot;;&quot;./../../PhysXAPI&quot;;&quot;./../../PhysXCommon/src&quot;;&quot;./../../GeomUtils/headers&quot;;&quot;./../../GeomUtils/src&quot;;&quot;./../../GeomUtils/Opcode&quot;;&quot;./../../PhysX/src&quot;;&quot;./../../PhysX/src/buffering&quot;;&quot;./../../PhysX/src/particles&quot;;&quot;./../../PhysX/src/deformable&quot;;&quot;./../../LowLevel/API/include&quot;;&quot;./../../LowLevel/software/include&quot;;&quot;./../../LowLevel/common/include/utils&quot;;&quot;./../../LowLevel/common/include/math&quot;;&quot;./../../SceneQuery&quot;;&quot;./../../SimulationController/include&quot;;&quot;./../../SimulationController/src&quot;;&quot;./../../SimulationController/src/framework&quot;;&quot;./../../PvdRuntime/src&quot;;&quot;./../../RepX/include&quot;;&quot;./../../RepX/src&quot;;&quot;./../../PhysXMetaData/core/include&quot;;&quot;./../../PhysXMetaData/extensions/include&quot;;&quot;./../../RepXUpgrader/include&quot;;&quot;./../../RepXUpgrader/src&quot;;&quot;./../../PxTask/include&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;PX_ENABLE_PROFILER;PX_SUPPORT_VISUAL_DEBUGGER;AG_PERFMON;NDEBUG;_SECURE_SCL=0;_ITERATOR_DEBUG_LEVEL=0;"
+      WarningLevel="3"
+      FloatingPointModel="2"
+      BasicRuntimeChecks=""
+      WarnAsError="true"
+      BufferSecurityCheck="false"
+      Optimization="3"
+      AdditionalOptions="/GR-  /GF   /arch:SSE2 /MP  "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="./../xpj/stdafx.h"
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLibrarianTool" 
+      OutputFile="$(OutDir)/RepXUpgrader3.lib" 
+      ProgramDataBaseFile="$(TargetDir)\$(TargetName).pdb"
+      LinkLibraryDependencies="true"
+      AdditionalOptions="/MACHINE:X86"
+      AdditionalDependencies=""
+      AdditionalLibraryDirectories=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+</Configurations>
+<References></References>
+<Files>
+  <Filter Name="include" Filter=""> <!--  -->
+    <File RelativePath="..\..\RepXUpgrader\include\RepX1_0Defaults.h">
+    </File>
+    <File RelativePath="..\..\RepXUpgrader\include\RepXUpgrader.h">
+    </File>
+  </Filter>
+  <Filter Name="src" Filter=""> <!--  -->
+    <File RelativePath="..\..\RepXUpgrader\src\RepXUpgrader.cpp">
+    </File>
+  </Filter>
+</Files>
+<Globals></Globals>
+</VisualStudioProject>

@@ -1,0 +1,200 @@
+# Define the rigid bodies that will make up the character
+
+A_RigidBody 
+	name body
+	mesh ../data/models/bigBird/torso.obj
+	colour 0.7 0.7 0.7 1
+	mesh ../data/models/bigBird/torso_2.obj
+	colour 0.2 0.2 0.2 1
+
+	mass 20
+	moi 0.34 0.40 0.39
+	CDP_Sphere 0 0 0 0.18
+	
+	position 0 1.035 0
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+
+A_RigidBody 
+	name neck
+	mesh ../data/models/bigBird/neck.obj
+	mass 10.0
+	moi 0.12 0.08 0.12
+	CDP_Capsule 0 0.05 0 0 -0.05 0 0.05
+	colour 0.6 0.6 0.6 1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody 
+	name head
+	mesh ../data/models/bigBird/head.obj
+	colour 0.7 0.7 0.7 1
+	mesh ../data/models/bigBird/eyes.obj
+	colour 0.5 0.5 0.5 1	
+	mass 10.7
+	moi 0.24 0.24 0.12
+	CDP_Capsule 0 0 0.12 0 0 -0.1 0.1
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name lUpperleg
+	mesh ../data/models/bigBird/lUpperLeg.obj
+	colour 0.7 0.7 0.7 1
+	mesh ../data/models/bigBird/lKnee.obj
+	colour 0.2 0.2 0.2 1
+
+	mass 3.7
+	moi 0.05 0.008 0.05
+	CDP_Capsule 0 0.12 0 -0.03 -0.20 0 0.05
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+			
+A_RigidBody
+	name lLowerleg
+	mesh ../data/models/bigBird/lLowerLeg.obj
+	colour 0.7 0.7 0.7 1
+	mesh ../data/models/bigBird/lAnkle.obj
+	colour 0.2 0.2 0.2 1
+	mass 2.2
+	moi 0.023 0.003 0.023
+	CDP_Capsule 0 0.12 0 0.03 -0.12 0 0.05
+
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name lFoot
+	mesh ../data/models/bigBird/lFoot.obj
+	colour 0.7 0.7 0.7 1
+
+	mass 5.8
+	moi 0.046 0.086 0.046
+	CDP_Box -0.07 -0.03 -0.07 0.07 0.02 0.12
+
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.05
+/End
+
+A_RigidBody
+	name rUpperleg
+	mesh ../data/models/bigBird/rUpperLeg.obj
+	colour 0.7 0.7 0.7 1
+	mesh ../data/models/bigBird/rKnee.obj
+	colour 0.2 0.2 0.2 1
+
+	mass 3.7
+	moi 0.05 0.008 0.05
+	CDP_Capsule 0 0.12 0 0.03 -0.20 0 0.05
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35
+/End
+			
+A_RigidBody
+	name rLowerleg
+	mesh ../data/models/bigBird/rLowerLeg.obj
+	colour 0.7 0.7 0.7 1
+	mesh ../data/models/bigBird/rAnkle.obj
+	colour 0.2 0.2 0.2 1
+
+	mass 2.2
+	moi 0.023 0.003 0.023
+	CDP_Capsule 0 0.12 0 -0.03 -0.12 0 0.05
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.35	
+/End
+
+A_RigidBody
+	name rFoot
+	mesh ../data/models/bigBird/rFoot.obj
+	colour 0.7 0.7 0.7 1
+	mass 5.8
+	moi 0.046 0.086 0.046
+	CDP_Box -0.07 -0.03 -0.07 0.07 0.02 0.12
+
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.05	
+/End
+
+ArticulatedFigure
+	root body
+	
+	ballInSocketJoint 1 0 0 0 1 0
+		name body_neck
+		parent body
+		child neck
+		jointPPos 0 0.16 0.10
+		jointCPos 0 -0.04 0.0
+		jointLimits -0.6 0.6 -0.6 0.6 -0.6 0.6
+	/Joint
+
+	ballInSocketJoint 1 0 0 0 1 0
+		name neck_head
+		parent neck
+		child head
+		jointPPos 0 0.09 -0.0
+		jointCPos 0 -0.085 -0.06
+		jointLimits -0.6 0.6 -0.6 0.6 -0.6 0.6
+	/Joint
+	
+	ballInSocketJoint 1 0 0 0 1 0
+		name lHip
+		parent body
+		child lUpperleg
+		jointPPos 0.16 -0.055 -0.025
+		jointCPos -0.02 0.135 0
+		jointLimits -1.3 1.9 -1 1 -0.25 1
+	/Joint
+	
+	hingeJoint 1 0 0
+		name lKnee
+		parent lUpperleg
+		child lLowerleg
+		jointPPos -0.04 -0.22 0.00
+		jointCPos 0 0.18 0.00
+		jointLimits -2.5 -0.5
+	/Joint
+	
+	universalJoint 1 0 0 0 0 1
+		name lAnkle
+		parent lLowerleg
+		child lFoot
+		jointPPos 0.04 -0.14 -0.01
+		jointCPos 0 0.06 -0.03
+		jointLimits -1.5 1.5 -0.75 0.75
+	/Joint
+
+	ballInSocketJoint 1 0 0 0 1 0
+		name rHip
+		parent body
+		child rUpperleg
+		jointPPos -0.16 -0.055 -0.025
+		jointCPos 0.02 0.135 0
+		jointLimits -1.3 1.9 -1 1 -1 0.25
+	/Joint
+	
+	hingeJoint 1 0 0
+		name rKnee
+		parent rUpperleg
+		child rLowerleg
+		jointPPos 0.04 -0.22 0.00
+		jointCPos 0 0.18 0.00
+		jointLimits -2.5 -0.5
+	/Joint
+
+	universalJoint 1 0 0 0 0 1
+		name rAnkle
+		parent rLowerleg
+		child rFoot
+		jointPPos -0.04 -0.14 -0.01
+		jointCPos 0 0.06 -0.03
+		jointLimits -1.5 1.5 -0.75 0.75
+	/Joint
+	
+/ArticulatedFigure
+

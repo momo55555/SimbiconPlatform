@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MFCFramework">
+      <UniqueIdentifier>{e79531a2-2a41-495b-b359-4113284974eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFCFramework\Resource Files">
+      <UniqueIdentifier>{c3fd9942-01ef-413f-988a-ae37184f86a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFCFramework\Header Filse">
+      <UniqueIdentifier>{30cea695-89e6-4a17-be2b-d13b82ddcde6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFCFramework\Source Files">
+      <UniqueIdentifier>{6ff8770d-180d-4c0a-8874-f8bde651e4d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLEffects">
+      <UniqueIdentifier>{aa60d7c0-f30c-4c9b-96d9-debf2bd16357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLImplement">
+      <UniqueIdentifier>{4822d9f6-37eb-438c-bb6e-2c4a830a44cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimbiconImplement">
+      <UniqueIdentifier>{baa92101-6cde-4231-bca9-93f80588035c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SharkObjective">
+      <UniqueIdentifier>{629905d7-0951-4185-a78e-489d575b9f85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClassView.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMFCGraphicsShaderFramework.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMFCGraphicsShaderFrameworkDoc.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMFCGraphicsShaderFrameworkView.h">
+      <Filter>MFCFramework\Header Filse</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyboxTechnique.h">
+      <Filter>GLImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>GLImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="LightingTechnique.h">
+      <Filter>GLImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="FloorTechnique.h">
+      <Filter>GLImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="BVHPlayer.h">
+      <Filter>GLImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinningTechnique.h">
+      <Filter>GLImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXVisualization.h">
+      <Filter>GLImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="WireFrameTechnique.h">
+      <Filter>GLImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerFramwork.h">
+      <Filter>SimbiconImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>SimbiconImplement</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>SimbiconImplement</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMFCGraphicsShaderFramework.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMFCGraphicsShaderFrameworkDoc.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMFCGraphicsShaderFrameworkView.cpp">
+      <Filter>MFCFramework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyboxTechnique.cpp">
+      <Filter>GLImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>GLImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="LightingTechnique.cpp">
+      <Filter>GLImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="FloorTechnique.cpp">
+      <Filter>GLImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinningTechnique.cpp">
+      <Filter>GLImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXVisualization.cpp">
+      <Filter>GLImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="WireFrameTechinique.cpp">
+      <Filter>GLImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerFramework.cpp">
+      <Filter>SimbiconImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>SimbiconImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>SimbiconImplement</Filter>
+    </ClCompile>
+    <ClCompile Include="Objectives1.h">
+      <Filter>SharkObjective</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyMFCGraphicsShaderFramework.rc">
+      <Filter>MFCFramework\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Data\GLEffects\Floor.fp">
+      <Filter>GLEffects</Filter>
+    </None>
+    <None Include="..\Data\GLEffects\Floor.vp">
+      <Filter>GLEffects</Filter>
+    </None>
+    <None Include="..\Data\GLEffects\Lighting.fp">
+      <Filter>GLEffects</Filter>
+    </None>
+    <None Include="..\Data\GLEffects\Lighting.vp">
+      <Filter>GLEffects</Filter>
+    </None>
+    <None Include="..\Data\GLEffects\Skybox.fp">
+      <Filter>GLEffects</Filter>
+    </None>
+    <None Include="..\Data\GLEffects\Skybox.vp">
+      <Filter>GLEffects</Filter>
+    </None>
+    <None Include="..\Data\GLEffects\Skinning.fp">
+      <Filter>GLEffects</Filter>
+    </None>
+    <None Include="..\Data\GLEffects\Skinning.vp">
+      <Filter>GLEffects</Filter>
+    </None>
+    <None Include="..\Data\GLEffects\WireFrame.fp">
+      <Filter>GLEffects</Filter>
+    </None>
+    <None Include="..\Data\GLEffects\WireFrame.vp">
+      <Filter>GLEffects</Filter>
+    </None>
+  </ItemGroup>
+</Project>

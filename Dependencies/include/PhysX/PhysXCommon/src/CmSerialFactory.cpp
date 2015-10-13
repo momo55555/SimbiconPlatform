@@ -1,0 +1,102 @@
+// This code contains NVIDIA Confidential Information and is disclosed to you 
+// under a form of NVIDIA software license agreement provided separately to you.
+//
+// Notice
+// NVIDIA Corporation and its licensors retain all intellectual property and
+// proprietary rights in and to this software and related documentation and 
+// any modifications thereto. Any use, reproduction, disclosure, or 
+// distribution of this software and related documentation without an express 
+// license agreement from NVIDIA Corporation is strictly prohibited.
+// 
+// ALL NVIDIA DESIGN SPECIFICATIONS, CODE ARE PROVIDED "AS IS.". NVIDIA MAKES
+// NO WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE WITH RESPECT TO
+// THE MATERIALS, AND EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES OF NONINFRINGEMENT,
+// MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.
+//
+// Information and code furnished is believed to be accurate and reliable.
+// However, NVIDIA Corporation assumes no responsibility for the consequences of use of such
+// information or for any infringement of patents or other rights of third parties that may
+// result from its use. No license is granted by implication or otherwise under any patent
+// or patent rights of NVIDIA Corporation. Details are subject to change without notice.
+// This code supersedes and replaces all information previously supplied.
+// NVIDIA Corporation products are not authorized for use as critical
+// components in life support devices or systems without express written approval of
+// NVIDIA Corporation.
+//
+// Copyright (c) 2008-2011 NVIDIA Corporation. All rights reserved.
+// Copyright (c) 2004-2008 AGEIA Technologies, Inc. All rights reserved.
+// Copyright (c) 2001-2004 NovodeX AG. All rights reserved.  
+
+
+//PX_SERIALIZATION
+
+#include "CmSerialFactory.h"
+#include "CmSerialFramework.h"
+
+using namespace physx;
+
+Cm::SerialFactory* Cm::SerialFactory::mInstance = NULL;
+
+
+Cm::SerialFactory::SerialFactory()
+{
+	for(PxU32 i=0;i<PxSerialType::eLAST;i++)
+		mCreators[i] = NULL;
+}
+
+
+bool Cm::SerialFactory::registerClass(PxType type, PxClassCreationCallback callback)
+{
+	PX_ASSERT(PxU32(type)<PxSerialType::eLAST);
+	PX_ASSERT(!mCreators[type]);
+	if(mCreators[type])
+		return false;
+	mCreators[type] = callback;
+	return true;
+}
+
+
+PxSerializable* Cm::SerialFactory::createClass(PxType type, char*& address, PxRefResolver& v) const
+{
+	PX_ASSERT(PxU32(type)<PxSerialType::eLAST);
+	PX_ASSERT(mCreators[type]);
+	if(!mCreators[type])
+		return NULL;
+	return (mCreators[type])(address, v);
+}
+
+
+bool Cm::registerClass(PxType type, PxClassCreationCallback callback)
+{
+	Cm::SerialFactory* factory = Cm::SerialFactory::getInstance();
+	return factory->registerClass(type, callback);
+}
+
+
+PxSerializable* Cm::createClass(PxType type, char*& address, PxRefResolver& v)
+{
+	Cm::SerialFactory* factory = Cm::SerialFactory::getInstance();
+	return factory->createClass(type, address, v);
+}
+
+
+void Cm::SerialFactory::createInstance()
+{
+	PX_ASSERT(!mInstance);
+	mInstance = PX_NEW(SerialFactory)();
+}
+
+
+void Cm::SerialFactory::destroyInstance()
+{
+	PX_ASSERT(mInstance);
+	PX_DELETE_AND_RESET(mInstance);
+}
+
+
+Cm::SerialFactory* Cm::SerialFactory::getInstance()
+{
+	return mInstance;
+}
+
+//~PX_SERIALIZATION
