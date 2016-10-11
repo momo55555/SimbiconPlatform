@@ -1,0 +1,8 @@
+RigidBody
+	name ground
+	static
+	CDP_Plane 0 1 0 0 -0.455 0
+#	CDP_Box -10 0 -10 10 -0.2 10
+	frictionCoefficient 2.5
+	restitutionCoefficient 0.35	
+/End
